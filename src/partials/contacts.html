@@ -1,5 +1,88 @@
 <section class="section">
-    <div class="container">
-        <h2>Contacts</h2>
+  <div class="container">
+    <h2 class="visually-hidden">Contacts</h2>
+    <div class="contact-title">
+      <p class="contact-title-tagline">Connect</p>
+      <p class="contact-title-heading">Order your unique jewelry</p>
+      <p class="contact-title-text">We'd love to hear more details from you!</p>
     </div>
+    <div class="contact-content">
+      <address class="contact-content-address">
+        <ul class="address-list">
+          <li class="address-list-item">
+            <svg class="address-item-icon" width="32" height="32">
+              <use
+                class="address-icon-img"
+                href="../images/icons/sprite.svg#icon-email"
+              ></use>
+            </svg>
+            <p class="address-item-type">Email</p>
+            <a
+              class="address-item-link"
+              href="mailto:info@handmadejewelry.com"
+              target="_blank"
+              >info@handmadejewelry.com</a
+            >
+          </li>
+          <li class="address-list-item">
+            <svg class="address-item-icon" width="32" height="32">
+              <use
+                class="address-icon-img"
+                href="../images/icons/sprite.svg#icon-phone"
+              ></use>
+            </svg>
+            <p class="address-item-type">Phone</p>
+            <a class="address-item-link" href="tel:+15550000000" target="_blank"
+              >+1 (555) 000-0000</a
+            >
+          </li>
+          <li class="address-list-item">
+            <svg class="address-item-icon" width="32" height="32">
+              <use
+                class="address-icon-img"
+                href="../images/icons/sprite.svg#icon-map"
+              ></use>
+            </svg>
+            <p class="address-item-type">Ofiice</p>
+            <a
+              class="address-item-link"
+              href="https://maps.app.goo.gl/CLUQxbLdRdkP4Amu6"
+              target="_blank"
+              >76-8 Oakington Manor Dr, London, UK</a
+            >
+          </li>
+        </ul>
+      </address>
+      <form class="contact-content-form">
+        <label class="contact-content-label" for="name-customer">Name*</label>
+        <input
+          class="contact-content-input"
+          type="text"
+          name="name-customer"
+          id="name-customer"
+          placeholder="Tony"
+        />
+        <span class="is-invalid-text" data-error="Error Text"></span>
+        <label class="contact-content-label" for="phone-customer">Phone*</label>
+        <input
+          class="contact-content-input"
+          type="tel"
+          name="phone-customer"
+          id="phone-customer"
+          placeholder="+1 234 567 8900"
+        />
+        <span class="is-invalid-text" data-error="Error Text"></span>
+        <label class="contact-content-label" for="description-customer"
+          >Describe what you want</label
+        >
+        <textarea
+          class="contact-content-input contact-content-textarea"
+          name="description-customer"
+          id="description-customer"
+          placeholder="Type your message..."
+        ></textarea>
+        <button class="contact-content-submit" type="button">Submit</button>
+      </form>
+    </div>
+  </div>
 </section>
