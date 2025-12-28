@@ -43,7 +43,7 @@
                 href="../images/icons/sprite.svg#icon-map"
               ></use>
             </svg>
-            <p class="address-item-type">Ofiice</p>
+            <p class="address-item-type">Office</p>
             <a
               class="address-item-link"
               href="https://maps.app.goo.gl/CLUQxbLdRdkP4Amu6"
@@ -54,6 +54,7 @@
         </ul>
       </address>
       <form class="contact-content-form">
+        <!-- onkeydown="return event.key != 'Enter';" -->
         <label class="contact-content-label" for="name-customer">Name*</label>
         <input
           class="contact-content-input"
@@ -61,8 +62,16 @@
           name="name-customer"
           id="name-customer"
           placeholder="Tony"
+          minlength="3"
+          pattern="^[A-Za-zА-Яа-яЁё\s\-]{3,60}$"
+          title="Name must contain at least 3 letters"
+          aria-describedby="error-name"
+          required
         />
-        <span class="is-invalid-text" data-error="Error Text"></span>
+        <span class="text-error" id="error-name"
+          >Name must contain at least 3 letters</span
+        >
+        <!-- <span class="is-invalid-text" data-error="Name must contain at least 3 letters and consist only of letters"></span> -->
         <label class="contact-content-label" for="phone-customer">Phone*</label>
         <input
           class="contact-content-input"
@@ -70,8 +79,15 @@
           name="phone-customer"
           id="phone-customer"
           placeholder="+1 234 567 8900"
+          pattern="^\+?\d{1,3}\s?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$"
+          title="Enter a valid phone number"
+          aria-describedby="error-phone"
+          required
         />
-        <span class="is-invalid-text" data-error="Error Text"></span>
+        <span class="text-error" id="error-phone"
+          >Enter a valid phone number</span
+        >
+        <!-- <span class="is-invalid-text" data-error="Enter a valid phone number"></span> -->
         <label class="contact-content-label" for="description-customer"
           >Describe what you want</label
         >
@@ -81,7 +97,7 @@
           id="description-customer"
           placeholder="Type your message..."
         ></textarea>
-        <button class="contact-content-submit" type="button">Submit</button>
+        <button class="contact-content-submit" type="submit">Submit</button>
       </form>
     </div>
   </div>
