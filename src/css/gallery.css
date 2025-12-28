@@ -7,7 +7,7 @@
   margin-bottom: 40px;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 768px) {
   .gallery-desc {
     margin-bottom: 80px;
   }

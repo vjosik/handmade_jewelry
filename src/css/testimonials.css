@@ -1,0 +1,131 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.testimonial-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.testimonial-par {
+  display: block;
+  justify-content: center;
+  margin: 0 auto;
+  width: 335px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+.name-review {
+  font-weight: 600;
+  font-size: 16px;
+}
+.testimonial-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.testimonial-item-review {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    width: 335px;
+    box-sizing: border-box;
+    height: 214px;
+    background-color: #F2F2F2;
+}
+.testimonial-item-review:not(:last-child) {
+    gap: 24px;
+}
+.testimonial-review {
+    display: flex;
+}
+
+.section, .container{
+  overflow: visible;
+  height: auto;
+  max-height: none;
+}
+
+.testimonial-review:not(:last-child) {
+  gap: 4px;
+}
+.testimonial-white-star {
+  fill: transparent;
+  stroke: #000;
+  stroke-width: 2;
+}
+@media only screen and (min-width: 768px) {
+  .testimonial-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+  .testimonial-list > li {
+    height: 260px;
+  }
+  .testimonial-list > li:nth-child(4) {
+    width: 248px;
+  }
+  .testimonial-list > li:nth-child(5),
+  .testimonial-list > li:nth-child(6) {
+    width: 204px;
+  }
+  .testimonial-item {
+    width: 203px;
+    height: 260px;
+  }
+  .testimonial-item-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 250px;
+    padding: 24px;
+  }
+  .testimonial-review {
+    width: auto;
+  }
+  .testimonial-media {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .testimonial-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.review-par {
+  margin-bottom: auto;
+}
+.testimonial-par {
+  width: 100%;
+}
+}
+@media only screen and (min-width: 1440px) {
+  .testimonial-list {
+    gap: 32px;
+  }
+  .testimonial-list > li:nth-child(4) {
+    width: 640px;
+  }
+   .testimonial-item-review {
+    width: 640px;
+   }
+   .testimonial-item {
+    width: 304px;
+   }
+  .testimonial-list > li:nth-child(5),
+  .testimonial-list > li:nth-child(6) {
+    width: 304px;
+  }
+  .testimonial-title{
+    font-size: 48px;
+  }
+}
