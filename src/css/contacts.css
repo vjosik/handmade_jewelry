@@ -8,7 +8,6 @@
 .contact-title-tagline {
   font-weight: 600;
   font-size: 16px;
-  line-height: 150%;
   margin-bottom: 16px;
 }
 .contact-title-heading {
@@ -19,11 +18,7 @@
   letter-spacing: -0.01em;
   margin-bottom: 24px;
 }
-.contact-title-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-}
+
 .contact-content {
   width: 100%;
 }
@@ -39,7 +34,6 @@
 /*.address-icon-img {
 }*/
 .address-item-type {
-  font-weight: 400;
   font-size: 20px;
   line-height: 140%;
   letter-spacing: -0.01em;
@@ -48,7 +42,6 @@
 .address-item-link {
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
   text-decoration: underline;
 }
 .address-item-link:hover,
@@ -82,44 +75,25 @@
   outline: none;
   border: 1px solid rgba(204, 193, 110, 1);
 }
-/* .contact-content-input:not(:placeholder-shown):required:valid {
-  margin-bottom: 24px;
-  width: 100%;
-  height: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  padding: 8px 12px;
-} */
+
 .contact-content-input:not(:placeholder-shown):required:not(:focus):invalid {
   border: 1px solid #8c0000;
   color: #8c0000;
 }
+
 .text-error {
   display: none;
-  font-weight: 400;
   font-size: 12px;
-  line-height: 150%;
   color: #8c0000;
   position: absolute;
   margin-top: -16px;
 }
+
 .contact-content-input:not(:placeholder-shown):required:not(:focus):invalid
   + .text-error {
   display: block;
 }
-/* .is-invalid {
-  border: 1px solid #8c0000;
-  color: #8c0000;
-}
-.is-invalid-text {
-  display: block;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;
-  color: #8c0000;
-  position: absolute;
-  margin-top: -16px;
-  margin-bottom: 16px;
-} */
+
 .contact-content-textarea {
   width: 100%;
   height: 180px;
@@ -130,9 +104,8 @@
   background-color: rgba(204, 193, 110, 1);
   width: 100%;
   height: 36px;
-  font-weight: 500; /*по факту вес шрифта 200 - возможно не правильно викачали или подключили*/
+  font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
   color: #000;
 }
 .contact-content-form:invalid .contact-content-submit {
@@ -152,12 +125,7 @@
   box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
   background-color: rgba(204, 193, 110, 1);
 }
-/* .is-inactive-button {
-  border: 1px solid #ccc16e;
-  background: #ccc16e;
-  opacity: 0.3;
-  cursor: not-allowed;
-} */
+
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .address-list {
@@ -170,6 +138,9 @@
   }
   .contact-content-submit {
     max-width: 239px;
+  }
+  .contact-title {
+    max-width: 704px;
   }
 }
 /* Styles for Desktop devices */
