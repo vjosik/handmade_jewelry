@@ -34,23 +34,18 @@ ul {
     padding: 32px;
     width: 335px;
     box-sizing: border-box;
-    height: 214px;
     background-color: #F2F2F2;
-}
-.testimonial-item-review:not(:last-child) {
     gap: 24px;
 }
 .testimonial-review {
     display: flex;
 }
-
 .section, .container{
   overflow: visible;
   height: auto;
   max-height: none;
 }
-
-.testimonial-review:not(:last-child) {
+.testimonial-review {
   gap: 4px;
 }
 .testimonial-white-star {
@@ -66,7 +61,7 @@ ul {
     gap: 24px;
   }
   .testimonial-list > li {
-    height: 260px;
+    min-height: 260px;
   }
   .testimonial-list > li:nth-child(4) {
     width: 248px;
