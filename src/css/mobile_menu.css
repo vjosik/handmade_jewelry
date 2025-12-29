@@ -43,8 +43,6 @@
 .btn-close-icon {
   fill: currentColor;
 }
-.mobile-nav {
-}
 
 .mobile-list {
   font-size: 16px;
@@ -54,12 +52,10 @@
   flex-direction: column;
   gap: 24px;
 }
-.mobile-item {
-}
 
 .mobile-link {
   cursor: pointer;
-  transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+  transition: color 0.3s ease-in, text-decoration 0.3s ease-in;
 }
 
 .mobile-link:hover,
@@ -71,28 +67,16 @@
 .mobile-link:active {
   color: #8668c7;
 }
-.btn-order {
-  min-width: 335px;
-  min-height: 36px;
+
+.mobile-menu .btn-link {
+  display: block;
+  max-width: 335px;
+  max-height: 36px;
   padding: 6px 0;
 
-  border: 1px solid #ccc16e;
-  background-color: #ccc16e;
-
   font-size: 16px;
-  font-weight: 500;
   line-height: 1.5;
-  color: rgba(0, 0, 0, 1);
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
+  text-align: center;
 
-.btn-order:hover,
-.btn-order:focus {
-  background-color: transparent;
-}
-
-.btn-order:active {
-  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
-  background-color: rgba(204, 193, 110, 1);
+  transition: background-color 0.3s ease-in, box-shadow 0.3s ease-in;
 }
