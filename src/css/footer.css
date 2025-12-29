@@ -1,32 +1,25 @@
 /* #region Container */
 
-.footer {
-  padding: 80px 20px;
-}
-
 .footer-container {
   max-width: 375px;
   margin: 0 auto;
   text-align: center;
+  padding: 80px 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .footer {
-    padding: 80px 64px;
-  }
-
+  
   .footer-container {
     max-width: 768px;
+    padding: 80px 64px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .footer {
-    padding: 80px 64px;
-  }
-
+  
   .footer-container {
     max-width: 1440px;
+    padding: 80px 64px;
     margin: 0 auto;
     text-align: left;
   }
