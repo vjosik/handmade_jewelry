@@ -1,30 +1,14 @@
-.container {
-  min-width: 335px;
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0 20px;
+.container-benefits {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
 }
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    padding: 0 64px;
-  }
-}
+
 .benefits-title {
   margin-bottom: 32px;
   text-align: center;
   width: 335px;
-  font-size: 36px;
   color: black;
 }
 @media only screen and (min-width: 768px) {
@@ -36,7 +20,6 @@
   .benefits-title {
     width: 870px;
     font-size: 40px;
-    
   }
 }
 .benefits-ul {
@@ -72,6 +55,5 @@
 }
 .benefits-text {
   font-size: 16px;
-  line-height: 1.5;
   text-align: center;
 }
