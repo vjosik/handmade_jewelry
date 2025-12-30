@@ -1,4 +1,4 @@
-.hero-section {
+.hero-container {
   background-color: #d8d8d8;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../images/background-img/background-img-mb.jpg);
@@ -13,13 +13,13 @@
   padding-bottom: 152px;
 }
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero-section {
+  .hero-container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url('../images/background-img/background-img-mb@2x.jpg');
   }
 }
 @media only screen and (min-width: 764px) {
-  .hero-section {
+  .hero-container {
     border: 1px solid #000;
     padding-top: 160px;
     padding-bottom: 435px;
@@ -33,7 +33,7 @@
   }
 }
 @media only screen and (min-width: 1164px) {
-  .hero-section {
+  .hero-container {
     padding-top: 224px;
     padding-bottom: 360px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
