@@ -1,4 +1,95 @@
-.hero {
-  padding-top: 72px;
+.hero-container {
+  background-color: #d8d8d8;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../images/background-img/background-img-mb.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding-top: 160px;
+  padding-bottom: 152px;
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../images/background-img/background-img-mb@2x.jpg');
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    padding-top: 160px;
+    padding-bottom: 435px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../images/background-img/background-img-tb.jpg');
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../images/background-img/background-img-tb@2x.jpg');
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero-container {
+    padding-top: 224px;
+    padding-bottom: 360px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../images/background-img/background-img-dt.jpg');
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../images/background-img/background-img-dt@2x.jpg');
+    }
+  }
+}
+.hero-container {
+  margin-left: auto;
 }
 
+.hero-title {
+  font-size: 40px;
+  color: #fff;
+  max-width: 335px;
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    max-width: 513px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero-title {
+    font-size: 56px;
+    max-width: 640px;
+  }
+}
+.hero-caption {
+  color: #fff;
+  max-width: 335px;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-caption {
+    max-width: 513px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero-caption {
+    max-width: 640px;
+  }
+}
+.hero-btn-link {
+  display: inline-block;
+  min-width: 335px;
+  padding: 6px 0;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .hero-btn-link {
+    min-width: 217px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero-btn-link {
+    min-width: 192px;
+  }
+}
