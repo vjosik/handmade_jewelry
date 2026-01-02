@@ -1,17 +1,26 @@
 /* #region Container */
-.footer {
-  padding: 80px 0;
-}
 
 .footer-container {
+  max-width: 375px;
+  margin: 0 auto;
   text-align: center;
+  padding: 80px 20px;
 }
-.footer-desktop-left{
-  margin-bottom: 64px;
+
+@media screen and (min-width: 768px) {
+  
+  .footer-container {
+    max-width: 768px;
+    padding: 80px 64px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  
   .footer-container {
+    max-width: 1440px;
+    padding: 80px 64px;
+    margin: 0 auto;
     text-align: left;
   }
 
@@ -40,8 +49,7 @@
 
 /* #region Logo */
 .section-footer-logo {
-  display: block;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .footer-logo {
@@ -52,10 +60,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .section-footer-logo { 
-    margin-bottom: 58px;
-  }
-
   .footer-logo {
     width: 318px;
     height: auto;
@@ -83,11 +87,13 @@
   display: flex;
   justify-content: center;
   gap: 12px;
+  margin-bottom: 64px;
 }
 
 @media screen and (min-width: 1440px) {
   .footer-socials {
     justify-content: flex-start;
+    margin-bottom: 0;
   }
 }
 
@@ -123,18 +129,14 @@
 
 /* #region Links */
 
-.footer-desktop-right {
-  margin-bottom: 24px;
-}
-
 .footer-pages {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin-bottom: 24px;
 }
 
 .footer-pages-link {
-  font-size: 16px;
   color: #000;
   text-decoration: none;
 }
@@ -147,7 +149,6 @@
 
 .footer-pages-link:active {
   color: #8668c7;
-  transition: color 150ms ease-in-out;
 }
 
 @media screen and (min-width: 1440px) {
@@ -159,11 +160,33 @@
 
 /* #endregion */
 
+/* #region Divider */
+.footer-divider {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 335px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-divider {
+    width: 100%;
+    max-width: 640px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-divider {
+    width: 100%;
+    max-width: 1312px;
+  }
+}
+
+/* #endregion */
+
 /* #region Copy */
 
 .footer-copyright {
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  padding-top: 32px;
   font-size: 14px;
   color: #000;
 }
