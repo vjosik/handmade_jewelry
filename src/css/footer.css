@@ -1,14 +1,31 @@
 /* #region Container */
+.footer {
+  padding: 80px 0;
+}
 
 .footer-container {
   max-width: 375px;
   margin: 0 auto;
   text-align: center;
-  padding: 80px 20px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-desktop-left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-desktop-content {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
 
 @media screen and (min-width: 768px) {
-  
   .footer-container {
     max-width: 768px;
     padding: 80px 64px;
@@ -16,7 +33,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  
   .footer-container {
     max-width: 1440px;
     padding: 80px 64px;
@@ -26,9 +42,10 @@
 
   .footer-desktop-content {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 24px;
+    gap: 64px;
   }
 
   .footer-desktop-left {
@@ -48,9 +65,6 @@
 /* #endregion */
 
 /* #region Logo */
-.section-footer-logo {
-  margin-bottom: 32px;
-}
 
 .footer-logo {
   display: block;
@@ -87,7 +101,6 @@
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-bottom: 64px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -103,6 +116,7 @@
   justify-content: center;
   width: 44px;
   height: 44px;
+  transition: transform 150ms ease-in-out, opacity 150ms ease-in-out;
 }
 
 @media screen and (min-width: 1440px) {
@@ -133,12 +147,13 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: 24px;
 }
 
 .footer-pages-link {
+  font-size: 16px;
   color: #000;
   text-decoration: none;
+  transition: color 150ms ease-in-out;
 }
 
 .footer-pages-link:hover,
@@ -151,6 +166,11 @@
   color: #8668c7;
 }
 
+.footer-socials,
+.footer-pages {
+  margin: 0;
+}
+
 @media screen and (min-width: 1440px) {
   .footer-pages {
     align-items: flex-start;
@@ -160,33 +180,11 @@
 
 /* #endregion */
 
-/* #region Divider */
-.footer-divider {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  width: 100%;
-  max-width: 335px;
-  margin-bottom: 32px;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-divider {
-    width: 100%;
-    max-width: 640px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .footer-divider {
-    width: 100%;
-    max-width: 1312px;
-  }
-}
-
-/* #endregion */
-
 /* #region Copy */
 
 .footer-copyright {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding-top: 32px;
   font-size: 14px;
   color: #000;
 }
