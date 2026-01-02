@@ -1,6 +1,5 @@
 <section class="section" id="contacts">
   <div class="container">
-    <!-- <h2 class="visually-hidden">Contacts</h2> -->
     <div class="contact-title">
       <h3 class="contact-title-tagline">Connect</h3>
       <h2 class="contact-title-heading">Order your unique jewelry</h2>
@@ -8,96 +7,121 @@
     </div>
     <div class="contact-content">
       <address class="contact-content-address">
-        <ul class="address-list">
-          <li class="address-list-item">
-            <svg class="address-item-icon" width="32" height="32">
-              <use
-                class="address-icon-img"
-                href="/assets/images/icons/sprite.svg#icon-email"
-              ></use>
-            </svg>
-            <p class="address-item-type">Email</p>
-            <a
-              class="address-item-link"
-              href="mailto:info@handmadejewelry.com"
-              target="_blank"
-              rel="noopener noreferer"
-            >
-              info@handmadejewelry.com
-            </a>
-          </li>
-          <li class="address-list-item">
-            <svg class="address-item-icon" width="32" height="32">
-              <use
-                class="address-icon-img"
-                href="/assets/images/icons/sprite.svg#icon-phone"
-              ></use>
-            </svg>
-            <p class="address-item-type">Phone</p>
-            <a
-              class="address-item-link"
-              href="tel:+15550000000"
-              target="_blank"
-              rel="noopener noreferer"
-            >
-              +1 (555) 000-0000
-            </a>
-          </li>
-          <li class="address-list-item">
-            <svg class="address-item-icon" width="32" height="32">
-              <use
-                class="address-icon-img"
-                href="/assets/images/icons/sprite.svg#icon-map"
-              ></use>
-            </svg>
-            <p class="address-item-type">Office</p>
-            <a
-              class="address-item-link"
-              href="https://maps.app.goo.gl/CLUQxbLdRdkP4Amu6"
-              target="_blank"
-              rel="noopener noreferer"
-            >
-              76-8 Oakington Manor Dr, London, UK
-            </a>
-          </li>
-        </ul>
+        <dl class="address-list">
+          <div class="address-list-item">
+            <dt class="address-item-name">
+              <svg
+                class="address-item-icon"
+                width="32"
+                height="32"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use
+                  class="address-icon-img"
+                  href="/assets/images/icons/sprite.svg#icon-email"
+                ></use>
+              </svg>
+              <span class="address-item-type">Email</span>
+            </dt>
+            <dd class="address-item-value">
+              <a
+                class="address-item-link"
+                href="mailto:info@handmadejewelry.com"
+              >
+                info@handmadejewelry.com
+              </a>
+            </dd>
+          </div>
+          <div class="address-list-item">
+            <dt class="address-item-name">
+              <svg
+                class="address-item-icon"
+                width="32"
+                height="32"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use
+                  class="address-icon-img"
+                  href="/assets/images/icons/sprite.svg#icon-phone"
+                ></use>
+              </svg>
+              <span class="address-item-type">Phone</span>
+            </dt>
+            <dd class="address-item-value">
+              <a class="address-item-link" href="tel:+15550000000">
+                +1 (555) 000-0000
+              </a>
+            </dd>
+          </div>
+          <div class="address-list-item">
+            <dt class="address-item-name">
+              <svg
+                class="address-item-icon"
+                width="32"
+                height="32"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use
+                  class="address-icon-img"
+                  href="/assets/images/icons/sprite.svg#icon-map"
+                ></use>
+              </svg>
+              <span class="address-item-type">Office</span>
+            </dt>
+            <dd class="address-item-value">
+              <a
+                class="address-item-link"
+                href="https://maps.app.goo.gl/CLUQxbLdRdkP4Amu6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                76-8 Oakington Manor Dr, London, UK
+              </a>
+            </dd>
+          </div>
+        </dl>
       </address>
       <form class="contact-content-form">
-        <label class="contact-content-label" for="name-customer">Name*</label>
-        <!-- "^[A-Za-zА-Яа-яЁё\s\-]{3,60}$" -->
-        <input
-          class="contact-content-input"
-          type="text"
-          name="name-customer"
-          id="name-customer"
-          placeholder="Tony"
-          minlength="5"
-          pattern="^[a-zA-Z\s\.]{5,28}$"
-          title="Name must contain at least 5 letters"
-          aria-describedby="error-name"
-          required
-        />
-        <span class="text-error" id="error-name">
-          Name must contain at least 5 letters
-        </span>
-
-        <label class="contact-content-label" for="phone-customer">Phone*</label>
-        <!-- "^\+?[0-9\s]{10,15}$" "^\+?\d{1,3}\s?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$" -->
-        <input
-          class="contact-content-input"
-          type="tel"
-          name="phone-customer"
-          id="phone-customer"
-          placeholder="+1 234 567 8900"
-          pattern="^\+[0-9\s]{14}$"
-          title="Enter a valid phone number"
-          aria-describedby="error-phone"
-          required
-        />
-        <span class="text-error" id="error-phone">
-          Enter a valid phone number
-        </span>
-
+        <div>
+          <label class="contact-content-label" for="name-customer">Name*</label>
+          <input
+            class="contact-content-input"
+            type="text"
+            name="name-customer"
+            id="name-customer"
+            placeholder="Tony"
+            minlength="5"
+            pattern="^[a-zA-Z\s\.]{5,28}$"
+            title="Name must contain at least 5 letters"
+            aria-describedby="error-name"
+            required
+          />
+          <span class="text-error" id="error-name">
+            Name must contain at least 5 letters
+          </span>
+        </div>
+        <div>
+          <label class="contact-content-label" for="phone-customer"
+            >Phone*</label
+          >
+          <input
+            class="contact-content-input"
+            type="tel"
+            name="phone-customer"
+            id="phone-customer"
+            placeholder="+1 234 567 8900"
+            pattern="^\+[0-9\s]{14}$"
+            title="Enter a valid phone number"
+            aria-describedby="error-phone"
+            required
+          />
+          <span class="text-error" id="error-phone">
+            Enter a valid phone number
+          </span>
+        </div>
         <label class="contact-content-label" for="description-customer">
           Describe what you want
         </label>
