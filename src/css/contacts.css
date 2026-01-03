@@ -56,11 +56,11 @@
 }
 .address-item-link:hover,
 .address-item-link:focus {
-  color: #8668c7;
+  color: #ccc16e;
   text-decoration-skip-ink: none;
 }
 .address-item-link:active {
-  color: #8668c7;
+  color: #ccc16e;
   text-decoration: none;
 }
 .is-inactive-link {
@@ -100,7 +100,7 @@
   font-size: 12px;
   color: #8c0000;
   position: absolute;
-  margin-top: -16px;
+  margin-top: 8px;
 }
 
 .contact-content-input:not(:placeholder-shown):required:not(:focus):invalid
