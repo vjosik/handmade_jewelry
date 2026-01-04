@@ -59,7 +59,7 @@
   transition: color 0.3s ease-in;
 }
 
-.mobile-item .mobile-link::after {
+.mobile-link::after {
   content: '';
   position: absolute;
   left: 0;
@@ -73,13 +73,13 @@
   transition: transform 0.3s ease-in;
 }
 
-.mobile-item .mobile-link:focus-visible::after,
-.mobile-item .mobile-link:active::after,
-.mobile-item .mobile-link.clicked::after {
+.mobile-link:focus-visible::after,
+.mobile-link:active::after,
+.mobile-link.clicked::after {
   transform: scaleX(1);
 }
 
-.mobile-item .mobile-link:active {
+.mobile-link:active {
   color: #8668c7;
 }
 
